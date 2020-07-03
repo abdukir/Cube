@@ -90,7 +90,7 @@ public class LevelGenerator : MonoBehaviour
 						case ObstacleType.Platform:
 							// Create a random float according to what we defined in level creation.
 							float randSpace = Random.Range(lvlMgr.curLevel.ObstacleProperties.PlatfromProperties.minSpaceSize, lvlMgr.curLevel.ObstacleProperties.PlatfromProperties.maxSpaceSize);
-							// Update the space valueç
+							// Update the space value
 							obj.GetComponent<PlatformController>().spaceBetweenPlatforms = randSpace;
 							// Update the space itself.
 							obj.GetComponent<PlatformController>().CalculateSpace(randSpace);

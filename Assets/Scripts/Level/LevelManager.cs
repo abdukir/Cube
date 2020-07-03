@@ -134,7 +134,7 @@ public class LevelManager : MonoBehaviour
 		lvlGen.levelEndPosition = obstacleCount * curLevel.obstacleProximity + lvlGen.obstacleSpawnY;
 
 		// Update the cur level text in the hud
-		curLevelText.text = "Level " + (GM.curLevelID + 1);
+		curLevelText.text = (GM.curLevelID + 1).ToString();
 	}
 
 	private List<Obstacle> GenerateObstacleList(Obstacle[] obstacles, int _obstacleCount, Color _obstacleColor)
